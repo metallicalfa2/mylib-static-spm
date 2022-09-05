@@ -1,0 +1,11 @@
+framework module FFIHashTest {
+  umbrella header "FFIHashTest.h"
+
+  export *
+  module * { export * }
+}
+
+module FFIHashTest.Swift {
+    header "FFIHashTest-Swift.h"
+    requires objc
+}
