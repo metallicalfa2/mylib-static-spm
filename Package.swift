@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "MyLibrary",
-            targets: ["MyLibrary"]),
+            targets: ["MyLibrary", "FFIHashTest"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,6 +21,7 @@ let package = Package(
         .target(
             name: "MyLibrary",
             dependencies: []),
+        .binaryTarget(name: "FFIHashTest", path: "./FFIHashTest.xcframework"),
         .testTarget(
             name: "MyLibraryTests",
             dependencies: ["MyLibrary"]),
