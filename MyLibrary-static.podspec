@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "MyLibrary-static"
-    s.version      = "0.3.0"
+    s.version      = "0.4.0"
     s.summary      = "A brief description of MyFramework project."
     s.description  = <<-DESC
     An extended description of MyFramework project.
