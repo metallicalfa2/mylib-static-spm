@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
                    Permission is granted to...
                   LICENSE
                 }
-    spec.source       = { :git => "https://github.com/metallicalfa2/mylib-static-spm.git", :tag => spec.version }
-    spec.author       = { "Torus Labs" => "rathishubham017@gmail.com" }
+    s.source       = { :git => "https://github.com/metallicalfa2/mylib-static-spm.git", :tag => spec.version }
+    s.author       = { "Torus Labs" => "rathishubham017@gmail.com" }
 
     s.public_header_files = "FFIHashTest.xcframework/ios-arm64_x86_64-simulator/FFIHashTest.framework/Headers/*.h"
     s.source_files = "FFIHashTest.xcframework/ios-arm64_x86_64-simulator/FFIHashTest.framework/Headers/*.h"
